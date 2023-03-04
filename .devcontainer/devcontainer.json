@@ -27,7 +27,8 @@
         "python.linting.mypyEnabled": true,
         "python.linting.pylintEnabled": true,
         "python.linting.pylintPath": "pylint",
-        "python.linting.mypyPath": "mypy"
+        "python.linting.mypyPath": "mypy",
+        "files.eol": "\n"
       }
     }
   },
