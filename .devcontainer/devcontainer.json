@@ -1,0 +1,37 @@
+{
+  "name": "Python Devcontainer",
+  "image": "mcr.microsoft.com/devcontainers/python:0-3.11",
+  "postCreateCommand": ".devcontainer/post-install.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers",
+        "ms-toolsai.vscode-jupyter-slideshow",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "DavidAnson.vscode-markdownlint",
+        "bungcip.better-toml",
+        "usernamehw.errorlens",
+        "streetsidesoftware.code-spell-checker",
+        "bierner.markdown-preview-github-styles"
+      ],
+      "settings": {
+        "python.languageServer": "Pylance",
+        "python.defaultInterpreterPath": "/.venv/bin/python",
+        "editor.defaultFormatter": "ms-python.python",
+        "python.formatting.provider": "black",
+        "editor.formatOnSave": true,
+        "python.linting.mypyEnabled": true,
+        "python.linting.pylintEnabled": true,
+        "python.linting.pylintPath": "pylint",
+        "python.linting.mypyPath": "mypy"
+      }
+    }
+  },
+  "features": {
+    "git": "os-provided"
+  }
+}
