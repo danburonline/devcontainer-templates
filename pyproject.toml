@@ -2,7 +2,7 @@
 name = "python-container"
 version = "0.0.1"
 description = "Example project with Poetry inside a devcontainer"
-authors = ["Luis Pinheiro <luis.pinheiro95@gmail.com>"]
+authors = ["Daniel Burger <public@danielburger.online>"]
 license = "MIT"
 readme = "README.md"
 
