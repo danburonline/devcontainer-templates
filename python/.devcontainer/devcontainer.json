@@ -1,6 +1,9 @@
 {
   "name": "Python Devcontainer",
-  "postCreateCommand": ".devcontainer/scripts/post_create.sh",
+  "service": "devcontainer",
+  "dockerComposeFile": "docker-compose.yaml",
+  "postCreateCommand": "./scripts/post_create.sh",
+  "workspaceFolder": "/workspace",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -31,6 +34,7 @@
     }
   },
   "features": {
+    "docker-from-docker": "latest",
     "git": "os-provided"
   }
 }

@@ -1,8 +1,8 @@
 // This is an example TypeScript script
 
-function test(hello: string) {
+function test(hello: string): string {
   // This is an example return
   return `${hello} world`
 }
 
-test('Hello')
+console.log(test('Hello'))

@@ -1,10 +1,22 @@
 {
-  "name": "Backend TypeScript Devcontainer",
+  "name": "TypeScript Devcontainer",
   "service": "devcontainer",
   "dockerComposeFile": "docker-compose.yaml",
   "postCreateCommand": "./scripts/post_create.sh",
   "workspaceFolder": "/workspace",
-  "forwardPorts": [8000 /* Default */],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "streetsidesoftware.code-spell-checker",
+        "bierner.markdown-preview-github-styles"
+      ],
+      "settings": {
+        "files.eol": "\n",
+        "editor.formatOnSave": true
+      }
+    }
+  },
   "features": {
     "docker-from-docker": "latest",
     "git": "os-provided"

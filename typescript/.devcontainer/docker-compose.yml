@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   devcontainer:
-    container_name: BackendTypeScriptDevcontainer
+    container_name: TypeScriptDevcontainer
     network_mode: host
     build:
       context: .
