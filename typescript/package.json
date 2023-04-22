@@ -1,0 +1,7 @@
+{
+  "name": "typescript-devcontainer",
+  "description": "Example project with PNPM inside a devcontainer",
+  "devDependencies": {},
+  "scripts": {},
+  "author": "Daniel Burger <public@danielburger.online>"
+}
