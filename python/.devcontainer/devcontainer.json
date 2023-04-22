@@ -9,7 +9,6 @@
         "ms-toolsai.jupyter",
         "bungcip.better-toml",
         "ms-python.vscode-pylance",
-        "ms-toolsai.jupyter-keymap",
         "ms-toolsai.jupyter-renderers",
         "DavidAnson.vscode-markdownlint",
         "ms-toolsai.vscode-jupyter-slideshow",

@@ -1,0 +1,12 @@
+{
+  "name": "Backend TypeScript Devcontainer",
+  "service": "devcontainer",
+  "dockerComposeFile": "docker-compose.yaml",
+  "postCreateCommand": "./scripts/post_create.sh",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [8000 /* Default */],
+  "features": {
+    "docker-from-docker": "latest",
+    "git": "os-provided"
+  }
+}

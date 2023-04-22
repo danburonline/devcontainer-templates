@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  devcontainer:
+    container_name: BackendTypeScriptDevcontainer
+    network_mode: host
+    build:
+      context: .
+      dockerfile: devcontainer.dockerfile
+    volumes:
+      # Mount the local directory into the container
+      - ..:/workspace:cached
+      # Cache dirs with lots of files to improve devcontainer performance
+      - cached-node_modules:/workspace/node_modules
+      - cached-pnpm_store:/workspace/.pnpm-store
+
+volumes:
+  cached-pnpm_store:
+  cached-node_modules:
