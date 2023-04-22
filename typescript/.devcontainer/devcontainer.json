@@ -1,5 +1,5 @@
 {
-  "name": "TypeScript Devcontainer",
+  "name": "TypeScript",
   "service": "devcontainer",
   "dockerComposeFile": "docker-compose.yml",
   "postCreateCommand": "./scripts/post_create.sh",

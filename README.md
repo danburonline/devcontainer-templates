@@ -1,8 +1,8 @@
 # Example Devcontainers
 
+This repository contains example [Devcontainer](https://code.visualstudio.com/docs/remote/containers) definitions for various languages and their environments.
+
 ## Overview
 
-This repository contains example [Devcontainer](https://code.visualstudio.com/docs/remote/containers) definitions for various languages and frameworks. Here's a list of the examples:
-
-- [TypeScript](typescript/README.md)
-- [Python](python/README.md)
+- [TypeScript](typescript/README.md): Basic Node.js and TypeScript development devcontainer with Node.js `^18` and PNPM.
+- [Python](python/README.md): Basic Python development devcontainer with Python `^3.11` and Poetry.
