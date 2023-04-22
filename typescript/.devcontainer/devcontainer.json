@@ -8,6 +8,7 @@
     "vscode": {
       "extensions": [
         "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
         "streetsidesoftware.code-spell-checker",
         "bierner.markdown-preview-github-styles"
       ],
