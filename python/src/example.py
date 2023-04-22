@@ -2,7 +2,7 @@
 
 
 def test(hello: str) -> str:
-    """This is an example function"""
+    """This is an example return"""
     return f"{hello} world"
 
 

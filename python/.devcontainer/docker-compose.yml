@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  devcontainer:
+    container_name: PythonDevcontainer
+    network_mode: host
+    build:
+      context: .
+      dockerfile: devcontainer.dockerfile
+    volumes:
+      # Mount the local directory into the container
+      - ..:/workspace:cached
+      # Cache dirs with lots of files to improve devcontainer performance
+      - cached-virtual_env:/workspace/.venv
+
+volumes:
+  cached-virtual_env:
