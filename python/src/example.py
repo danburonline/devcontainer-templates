@@ -1,5 +1,9 @@
 """This is an example Python script"""
 
-def test() -> str:
+
+def test(hello: str) -> str:
     """This is an example function"""
-    return "Hello World"
+    return f"{hello} world"
+
+
+print(test("Hello"))

@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "python-container"
+name = "python-devcontainer"
 version = "0.0.1"
 description = "Example project with Poetry inside a devcontainer"
 authors = ["Daniel Burger <public@danielburger.online>"]
@@ -8,14 +8,12 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.11"
-matplotlib = "^3.7.1"
-pandas = "^1.5.3"
 
 [tool.poetry.group.dev.dependencies]
-pylint = "^2.16.3"
-mypy = "^1.0.1"
-black = "^23.1.0"
-ipykernel = "^6.21.2"
+ipykernel = "^6.22.0"
+black = "^23.3.0"
+pylint = "^2.17.2"
+mypy = "^1.2.0"
 
 [build-system]
 requires = ["poetry-core"]

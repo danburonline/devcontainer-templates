@@ -1,6 +1,6 @@
 {
   "name": "Python Devcontainer",
-  "image": "mcr.microsoft.com/devcontainers/python:0-3.12",
+  "image": "mcr.microsoft.com/devcontainers/python:0-3.11",
   "postCreateCommand": ".devcontainer/post-install.sh",
   "customizations": {
     "vscode": {
@@ -18,16 +18,17 @@
         "bierner.markdown-preview-github-styles"
       ],
       "settings": {
-        "python.languageServer": "Pylance",
-        "python.defaultInterpreterPath": "/.venv/bin/python",
-        "editor.defaultFormatter": "ms-python.python",
-        "python.formatting.provider": "black",
+        "files.eol": "\n",
         "editor.formatOnSave": true,
+        "python.languageServer": "Pylance",
+        "python.linting.mypyPath": "mypy",
         "python.linting.mypyEnabled": true,
         "python.linting.pylintEnabled": true,
         "python.linting.pylintPath": "pylint",
-        "python.linting.mypyPath": "mypy",
-        "files.eol": "\n"
+        "python.formatting.provider": "black",
+        "python.analysis.typeCheckingMode": "strict",
+        "editor.defaultFormatter": "ms-python.python",
+        "python.defaultInterpreterPath": "/.venv/bin/python"
       }
     }
   },
