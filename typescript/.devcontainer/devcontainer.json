@@ -2,7 +2,7 @@
   "name": "TypeScript",
   "service": "devcontainer",
   "dockerComposeFile": "docker-compose.yml",
-  "postCreateCommand": "./scripts/post_create.sh",
+  "postCreateCommand": "./devcontainer/scripts/post_create.sh",
   "workspaceFolder": "/workspace",
   "customizations": {
     "vscode": {
