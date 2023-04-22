@@ -13,6 +13,7 @@ services:
       # Cache dirs with lots of files to improve devcontainer performance
       - cached-node_modules:/workspace/node_modules
       - cached-pnpm_store:/workspace/.pnpm-store
+    command: sleep infinity # Keep the container running
 
 volumes:
   cached-pnpm_store:

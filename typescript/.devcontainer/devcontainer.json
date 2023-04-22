@@ -1,7 +1,7 @@
 {
   "name": "TypeScript Devcontainer",
   "service": "devcontainer",
-  "dockerComposeFile": "docker-compose.yaml",
+  "dockerComposeFile": "docker-compose.yml",
   "postCreateCommand": "./scripts/post_create.sh",
   "workspaceFolder": "/workspace",
   "customizations": {

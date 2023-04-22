@@ -12,6 +12,7 @@ services:
       - ..:/workspace:cached
       # Cache dirs with lots of files to improve devcontainer performance
       - cached-virtual_env:/workspace/.venv
+    command: sleep infinity # Keep the container running
 
 volumes:
   cached-virtual_env:
