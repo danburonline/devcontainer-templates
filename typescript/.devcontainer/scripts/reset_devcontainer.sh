@@ -16,7 +16,6 @@ docker container rm typescript_devcontainer
 # Remove the devcontainer images
 docker image rm mcr.microsoft.com/devcontainers/typescript-node
 docker image rm typescript_devcontainer-devcontainer
-docker image rm typescript_devcontainer-devcontainer
 
 # Remove the devcontainer volumes
 docker volume rm cached-node_modules
