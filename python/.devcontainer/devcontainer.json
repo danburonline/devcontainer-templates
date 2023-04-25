@@ -4,6 +4,11 @@
   "service": "devcontainer",
   "workspaceFolder": "/workspace",
   "postCreateCommand": ".devcontainer/scripts/post_create.sh",
+  "containerEnv": {
+      // To prevent pylint import errors
+      "PYTHONPATH": "${workspaceFolder}",
+      "PYTHON_PATH": "${workspaceFolder}/.venv/bin/python"
+  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -18,6 +23,7 @@
         "bierner.markdown-preview-github-styles"
       ],
       "settings": {
+        // Configure the python tools to use the versions packaged in the virtual environment
         "files.eol": "\n",
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "ms-python.python",
