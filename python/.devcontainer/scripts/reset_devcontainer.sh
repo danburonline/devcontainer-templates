@@ -12,10 +12,5 @@ rm -rf .venv
 docker stop PythonDevcontainer
 docker container rm python_devcontainer
 
-# Remove the devcontainer images
-docker image rm mcr.microsoft.com/devcontainers/python
-docker image rm python_devcontainer-devcontainer
-
 # Remove the devcontainer volumes
-docker volume rm python_devcontainer_cached-virtual_env
 docker volume rm vscode
